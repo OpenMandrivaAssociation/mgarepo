@@ -11,6 +11,7 @@ Requires: python-cheetah subversion openssh-clients python-rpm
 Requires: python-devel
 BuildRoot: %{_tmppath}/%{name}-%{version}-root
 BuildArch: noarch
+BuildRequires: python-devel
 
 %description
 Tools for Mageia repository access and management.
