@@ -1,17 +1,15 @@
 %define Uname MgaRepo
 Name: mgarepo
-Version: 1.9.10
+Version: 1.9.11
 Release: %mkrel 1
 Summary: Tools for Mageia repository access and management
 Group: Development/Other
-Source: %{name}-%{version}.tar.bz2
+Source: http://distrib-coffee.ipsl.jussieu.fr/pub/linux/Mageia/software/%{name}/%{name}-%{version}.tar.bz2
 License: GPLv2+
-URL: http://svnweb.mageia.org/soft/build_system/mgarepo/
+URL: http://svn.mageia.org/soft/build_system/mgarepo/
 Requires: python-cheetah subversion openssh-clients python-rpm
-Requires: python-devel
 BuildRoot: %{_tmppath}/%{name}-%{version}-root
 BuildArch: noarch
-BuildRequires: python-devel
 
 %description
 Tools for Mageia repository access and management.
@@ -21,8 +19,8 @@ It is a fork of repsys :
 
 %package ldap
 Group: Development/Other
-Summary: mgarepo plugin to retrieve maintainer information from LDAP
-Requires: mgarepo >= 1.6.16 
+Summary: Mgarepo plug-in to retrieve maintainer information from LDAP
+Requires: mgarepo
 Requires: python-ldap
 
 %description ldap
@@ -70,8 +68,6 @@ rm -rf %{buildroot}
 %{python_sitelib}/*.egg-info
 
 %files ldap
+%defattr(-,root,root)
 %doc README.LDAP
 %{python_sitelib}/%{Uname}/plugins/ldapusers.py*
-
-
-
