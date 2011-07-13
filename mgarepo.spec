@@ -9,7 +9,7 @@ License: GPLv2+
 URL: http://svn.mageia.org/soft/build_system/mgarepo/
 Requires: python-cheetah subversion openssh-clients python-rpm
 BuildRoot: %{_tmppath}/%{name}-%{version}-root
-BuildRequires: python
+BuildRequires: python-devel
 BuildArch: noarch
 
 %description
