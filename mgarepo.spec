@@ -76,3 +76,41 @@ rm -rf %{buildroot}
 %defattr(-,root,root)
 %doc README.LDAP
 %{python_sitelib}/%{Uname}/plugins/ldapusers.py*
+
+
+%changelog
+* Thu Nov 24 2011 Funda Wang <fwang@mandriva.org> 1.10.2-1mdv2011.0
++ Revision: 733205
+- new version 1.10.2
+
+* Wed Aug 24 2011 Funda Wang <fwang@mandriva.org> 1.10.1-1
++ Revision: 696359
+- new version 1.10.1
+
+* Thu Aug 18 2011 Michael Scherer <misc@mandriva.org> 1.10.0-1
++ Revision: 695234
+- new version 1.10.0
+- split each requires on its own lines, so changes are easier to spot
+
+  + Funda Wang <fwang@mandriva.org>
+    - br python-devel
+    - br python
+
+* Wed Jul 13 2011 Funda Wang <fwang@mandriva.org> 1.9.11-1
++ Revision: 689820
+- new version 1.9.11
+
+* Wed May 25 2011 Michael Scherer <misc@mandriva.org> 1.9.10-1
++ Revision: 679041
+- update to 1.9.10
+
+* Sun Mar 13 2011 Funda Wang <fwang@mandriva.org> 1.9.9-2
++ Revision: 644130
+- use mkrel
+- add python devel as BR for older distros
+
+* Thu Mar 10 2011 Michael Scherer <misc@mandriva.org> 1.9.9-1
++ Revision: 643562
+- adapt to mandriva packaging policy
+- import mgarepo
+
